@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira:wght@700&display=swap');
+
+:root {
+    --primary-color: #033b4a;
+    --secondary-color: #978149;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff7e3b7;
+}
+
+h1 {
+    font-family: "Saira", sans-serif; 
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.text-primary { 
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #f7d6ec;
+}
+
+/* Header Start */
+#hem .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+
+}
+
+#hem .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+
+ #logo {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header .navbar nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar nav ul a {
+    margin: 0 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+header .header-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+    text-align: center;
+}  
+
+header.header-content.content-text { 
+    margin-bottom: 10rem; 
+}
+
+#hem .header-content p span {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#hem .header-content h1 {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center;
+}
+
+#hem .header-content .title {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin: 10px 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+
+header .header-content img {
+    max-width: 110%;
+    display: block; 
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+/*Header End*/
+
+/* About & Skills Start */
+
+#Om,
+#HTML, #Services {
+    padding: 6rem;
+}
+
+#Om h2,
+#HTML h2, #Services h2 {
+    text-align: center;
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#Om hr,
+#HTML hr, #Services hr {
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 5px auto 0;
+}
+
+#Om .about-content,
+#HTML .skills-content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10rem;
+}
+
+#Om .about-content .col-1 h3,
+#HTML .skills-content .row .item p {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#Om .about-content .col-1 p,
+#HTML .skills-content .row .item p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#Om .about-content .col-2 p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    margin-top: 45px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+#HTML {
+    background-color:#f5dfef ;
+}
+
+#HTML h2 {
+    COLOR: #fff;
+    font-family: 'poppins', sans-serif;
+}
+#HTML .skills-content .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#HTML .skills-content .row .item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    transition: all 0.3s ease;
+
+}
+
+#HTML .skills-content .row .item .icon-container {
+    margin-right: 2px;
+}
+#HTML h2, #HTML p.description {
+    font-size: 24px;
+    color:#0e0c0c; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+#HTML .skills-content .row .item p {
+    margin: 0; 
+    color: #fff; 
+}
+#HTML .skills-content .row .item .text-container {
+    background-color: #706446; 
+    padding: 10px; 
+    border-radius: 40px; 
+    width: 500px;
+    max-width: 100%;
+    display: grid;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+#HTML .skills-content .row .item .text-container p.text {
+    color: #fff; 
+    margin: 0; 
+}
+#HTML .row .item:hover {
+    transform: scale(1.04);
+
+}
+#HTML .skills-content .row .item .text-container p.subtext {
+    color: #ccc; 
+    margin: 0; }
+/* About & Skills END */
+
+/* Services Start */
+#Services {
+    background: #00f4ab0c;
+    background: #00f4ab0c;
+    position: relative; /* Ensure position is relative */
+    z-index: 999; /* Lower z-index value compared to the navbar */
+
+}
+#Services .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 15px;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    
+}
+    
+#Services .row .item {
+    background-color: #fff;
+    padding: 50px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#Services .row .item:hover {
+    transform: scale(1.04);
+
+}
+
+  #Services .item img {
+        max-width: 50%; 
+        height: auto; 
+    }
+    
+    #Services .item h2 {
+        font-size: 1.6rem; 
+        margin-top: 9px;
+    }
+    #Services .row .item h3 {
+        margin: 15px 0;
+        color: var(--primary-color);
+    }
+
+    #Services .row .item p {
+    font-size: 14px;
+    
+    }
+    /* Services End */
+
+
+/* hi start */
+#hi {
+    padding: 6rem;
+    background-color: #f2f2f2; /* Add your desired background color */
+}
+#hi p {
+    margin-bottom: 25px; /* Adjust the value as needed */
+}
+
+#hi h2 {
+    font-size: 24px;
+    color:#0e0c0c; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+#hi hr {
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 5px auto 0;
+}
+
+#hi .about-content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10rem;
+}
+
+#hi .about-content .col-1 {
+    color: var(--gray);
+    margin-bottom: 20px;
+    margin-top: 45px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    width: 700px;
+    text-align: justify;
+
+
+
+}
+#hi .about-content .col-2 {
+    color: var(--gray);
+    margin-bottom: 20px;
+    margin-top: 45px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    display: block;}
+    
+#hi .about-content .col-2 .icon-container {
+    display: flex;
+    align-items: center;
+}
+
+#hi .about-content .col-2 .icon-container i {
+    margin-right: 19px; /* Add space between icon and text */
+}
+
+/* Style the text */
+#hi .about-content .col-2 p {
+    color: #f879c1; /* Add your desired text color */
+    font-size: 15px;
+    line-height: 1.8; /* Adjust line height as needed */ 
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+
+/* hi end */
+
+/* Tablet Responsive */
+@media (max-width: 430px)
+(max-height: 932px) {
+    
+} {
+    #hem .navbar {
+        display: block !important;
+        text-align: center !important;
+    }
+}
